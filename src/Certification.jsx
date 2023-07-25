@@ -49,7 +49,7 @@ function Certification() {
           <div className="flex ml-5 justify-evenly">
           <div className="h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer  hover:animate-bounce ">
             <img
-              src="webd.png"
+              src="ibm.png"
               alt=""
               height={250}
               width={250}
@@ -61,7 +61,7 @@ function Certification() {
           </div>
           <div className="h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer  hover:animate-bounce ">
             <img
-              src="ibm"
+              src="ibmm.png"
               alt=""
               height={250}
               width={250}

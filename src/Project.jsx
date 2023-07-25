@@ -10,7 +10,7 @@ function Project() {
         <div className="text-center flex bg-blue-950 rounded-lg shadow-lg shadow-black justify-evenly p-[5%] pt-[5%] ml-[20%] mr-[20%] mb-12 flex-wrap gap-[20px]">
           <div className="h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer  hover:animate-bounce ">
             <img
-              src="Resume.png"
+              src="resume.png"
               alt=""
               height={250}
               width={250}
