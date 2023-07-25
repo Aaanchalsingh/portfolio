@@ -4,7 +4,7 @@ function Header() {
   return (
     <div className="flex justify-between m-4">
       <h1 className="font-bold text-2xl md:text-3xl ml-5 text-slate-900">
-
+      <div className="flex">
       <img
               src="lo.png"
               alt=""
@@ -13,6 +13,7 @@ function Header() {
               className=""
             />
             Aanchal
+        </div>
         </h1>
       <ul className="flex font-bold justify-evenly text-1xl">
         <li className="mr-5 md:mr-16 md:text-2xl pb-5 hover:text-blue-900">Home</li>
