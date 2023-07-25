@@ -17,7 +17,7 @@ function Certification() {
               className="m-5 ml-12 mb-2 rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
-              HackNCrack
+              HackaThon
             </span>
           </div>
           <div className="h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer  hover:animate-bounce ">
@@ -61,26 +61,26 @@ function Certification() {
           </div>
           <div className="h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer  hover:animate-bounce ">
             <img
-              src=""
+              src="ibm"
               alt=""
               height={250}
               width={250}
               className="m-5 ml-12 mb-2 rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
-              HackNCrack
+              Operating System
             </span>
           </div>
           <div className="h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer  hover:animate-bounce ">
             <img
-              src=""
+              src="upgrad.png"
               alt=""
               height={250}
               width={250}
               className="m-5 ml-12 mb-2 rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
-              HackNCrack
+              Cyber Security
             </span>
           </div>
 
