@@ -3,7 +3,18 @@ import React from "react";
 function Header() {
   return (
     <div className="flex justify-between m-4">
-      <h1 className="font-bold text-2xl md:text-3xl ml-5 text-slate-900">Aanchal</h1>
+      <h1 className="font-bold text-2xl md:text-3xl ml-5 text-slate-900">
+
+      <img
+              src="logo.png"
+              alt=""
+              height={50}
+              width={50}
+              className="m-5 ml-12 mb-2 rounded-xl shadow-lg shadow-black"
+            />
+        <img src="LOGO.png" alt="" />
+
+        </h1>
       <ul className="flex font-bold justify-evenly text-1xl">
         <li className="mr-5 md:mr-16 md:text-2xl pb-5 hover:text-blue-900">Home</li>
         <li className="mr-5  hover:text-blue-900 md:mr-16 md:text-2xl ">About</li>
