@@ -6,11 +6,11 @@ function Header() {
       <h1 className="font-bold text-2xl md:text-3xl ml-5 text-slate-900">
 
       <img
-              src="logo.png"
+              src="lo.png"
               alt=""
-              height={50}
-              width={50}
-              className="m-5 ml-12 mb-2 rounded-xl shadow-lg shadow-black"
+              height={70}
+              width={70}
+              className=""
             />
         </h1>
       <ul className="flex font-bold justify-evenly text-1xl">
