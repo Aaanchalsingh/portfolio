@@ -12,6 +12,7 @@ function Header() {
               width={70}
               className=""
             />
+            Aanchal
         </h1>
       <ul className="flex font-bold justify-evenly text-1xl">
         <li className="mr-5 md:mr-16 md:text-2xl pb-5 hover:text-blue-900">Home</li>
