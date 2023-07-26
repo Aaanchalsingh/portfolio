@@ -5,6 +5,7 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 import Project from "./Project";
 import Certification from "./Certification";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
       <Skills />
       <Project />
       <Certification />
-
       <Contact />
+      <Footer/>
     </div>
   );
 }
