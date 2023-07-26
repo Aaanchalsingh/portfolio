@@ -9,7 +9,7 @@ import Footer from "./Footer";
 
 function App() {
   return (
-    <div>
+    <div style={{backgroundImage:"https://cdn.svgator.com/images/2022/06/SVG-background-animation.gif"}}>
       <Header />
       <Page1 />
       <Skills />
