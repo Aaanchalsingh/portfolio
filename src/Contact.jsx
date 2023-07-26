@@ -1,6 +1,5 @@
 import React from "react";
 import {FaHeadset} from 'react-icons/fa';
-import { SiMinutemailer } from 'react-icons/si';
 
 function Contact() {
   return (
@@ -47,7 +46,7 @@ function Contact() {
             className="text-white flex w-
             30 p-2 ml-[70%] animate-bounce rounded-lg "
           >
-            Submit&nbsp;<SiMinutemailer/>
+            Submit
           </button>
         </form>
       </div>

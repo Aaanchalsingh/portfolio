@@ -27,6 +27,7 @@ function Page1() {
           </h1>
         </div>
       </div>
+      <img src="hero.png" alt="" />
     </div>
   );
 }
