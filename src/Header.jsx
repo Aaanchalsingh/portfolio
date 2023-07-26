@@ -7,7 +7,7 @@ function Header() {
       <h1 className="font-bold text-2xl md:text-3xl ml-5 text-slate-900">
       <div className="flex">
 
-           <h1 style={{fontFamily:"Bungee Spice"}}>Aanchal</h1>
+           <h1 className="italic font-bold">Aanchal</h1>
         </div>
         </h1>
       <ul className="flex font-bold justify-evenly text-1xl">
