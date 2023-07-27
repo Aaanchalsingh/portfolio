@@ -1,14 +1,44 @@
-import React from "react";
+import "./skills.css";
+import React, { useState, useEffect } from "react";
 
 function Project() {
+  const [fadeIn, setFadeIn] = useState(false);
+
+  const handleIntersection = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setFadeIn(true);
+      } else {
+        setFadeIn(false);
+      }
+    });
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    });
+
+    const elementsToObserve = document.querySelectorAll(".animate-on-scroll");
+    elementsToObserve.forEach((element) => observer.observe(element));
+
+    return () => {
+      elementsToObserve.forEach((element) => observer.unobserve(element));
+    };
+  }, []);
+
   return (
     <>
       <div className="bg-blue-500 pb-5 shadow-lg shadow-black">
-        <h1 className="text-7xl  text-purple-990 font-sans-serrif font-bold  text-center pt-4 mb-12 animate-bounce">
+        <div className={`${fadeIn ? 'zoom-in-left' :'zoom-in-left'} animate-on-scroll`}>
+        <h1 className="text-7xl  text-purple-990 font-sans-serrif font-bold  text-center pt-4 mb-12 ">
           Projects
         </h1>
+        </div>
         <div className="text-center flex bg-blue-950 rounded-lg shadow-lg shadow-black justify-evenly p-[5%] pt-[5%] ml-[20%] mr-[20%] mb-12 flex-wrap gap-[20px]">
-          <div className="h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer  hover:animate-bounce ">
+          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :''} animate-on-scroll`}>
             <img
               src="resume.png"
               alt=""
@@ -20,7 +50,7 @@ function Project() {
               Resume Builder
             </span>
           </div>
-          <div className="h-[350px] w-[370px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer  hover:animate-bounce ">
+          <div className={`h-[350px] w-[370px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :''} animate-on-scroll`}>
             <img
               src="Portfolio.png"
               alt=""
@@ -34,7 +64,7 @@ function Project() {
           </div>
         </div>
         <div className="text-center flex bg-blue-950 rounded-lg shadow-lg shadow-black justify-evenly p-[5%] pt-[5%] ml-[20%] mr-[20%] mb-12 flex-wrap gap-[20px]">
-          <div className="h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer pb-5  hover:animate-bounce ">
+          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer pb-5 ${fadeIn ? 'zoom-in-left' :''} animate-on-scroll`}>
             <img
               src="id.png"
               alt=""
@@ -47,7 +77,7 @@ function Project() {
             </span>
           </div>
 
-          <div className="h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer hover:animate-bounce ">
+          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :''} animate-on-scroll`}>
             <img
               src="dog.png"
               alt=""
@@ -61,7 +91,7 @@ function Project() {
           </div>
         </div>
         <div className="text-center flex bg-blue-950 rounded-lg shadow-lg shadow-black justify-evenly p-[5%] pt-[5%] ml-[20%] mr-[20%] mb-12 flex-wrap gap-[20px]">
-          <div className="h-[300px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer  hover:animate-bounce ">
+          <div className={`h-[300px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :''} animate-on-scroll`}>
             <img
               src="quote.png"
               alt=""
@@ -74,7 +104,7 @@ function Project() {
             </span>
           </div>
 
-          <div className="h-[300px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer  hover:animate-bounce ">
+          <div className={`h-[300px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer  ${fadeIn ? 'zoom-in-right' :''} animate-on-scroll`}>
             <img
               src="developerolio.png"
               alt=""
@@ -88,7 +118,7 @@ function Project() {
           </div>
         </div>
         <div className="text-center flex bg-blue-950 rounded-lg shadow-lg shadow-black justify-evenly p-[5%] pt-[5%] ml-[20%] mr-[20%] mb-12 flex-wrap gap-[20px]">
-          <div className="h-[300px] w-[350px] bg-slate-900 rounded-lg shadow-lg  shadow-black  cursor-pointer hover:animate-bounce">
+          <div className={`h-[300px] w-[350px] bg-slate-900 rounded-lg shadow-lg  shadow-black  cursor-pointer ${fadeIn ? 'zoom-in-left' :''} animate-on-scroll`}>
             <img
               src="secret.png"
               alt=""
@@ -100,7 +130,7 @@ function Project() {
               Secret
             </span>
           </div>
-          <div className="h-[300px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer hover:animate-bounce ">
+          <div className={`h-[300px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :''} animate-on-scroll`}>
             <img
               src="drum.png"
               alt=""

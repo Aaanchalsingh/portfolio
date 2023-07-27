@@ -3,11 +3,10 @@ import ReactTyped from "react-typed";
 
 function Page1() {
   return (
-    <div>
-      <div className="c1 h-[150px] w-[150px] bg-red-600 rounded-full" style={{position:"absolute",top:"79%",left:"5%",zIndex:"-2" }}></div>
-      <div className="h-[150px] w-[150px] bg-red-600 rounded-full" style={{position:"absolute",top:"6%",left:"84%",zIndex:"-2" }}></div>
-    <div className="shadow-lg mb-[7%]  shadow-black border-lg  h-[600px] m-5 rounded-lg flex justify-between  ml-[10%] mr-[10%] mt-[3%] border-violet-900" style={{backgroundColor:"rgb(20, 2, 44)"}}>
-
+    <div >
+      <div className="c1 h-[150px] w-[150px] bg-red-600 rounded-full" style={{position:"absolute",top:"79%",left:"5%",zIndex:"-1" }}></div>
+      <div className="h-[150px] w-[150px] bg-red-600 rounded-full" style={{position:"absolute",top:"6%",left:"84%",zIndex:"-1" }}></div>
+    <div className="shadow-lg mb-[7%]  shadow-black border-lg  h-[600px] m-5 rounded-lg flex justify-between  ml-[10%] mr-[10%] mt-[3%] border-violet-900" style={{backgroundColor:"rgb(20, 2, 44)" }}>
       <div className="mt-[10%] ml-[15%] w-[30%] " >
         <h1 className="text-2xl text-white mb-5 font-sans ">
           Hello, I am
@@ -21,7 +20,7 @@ function Page1() {
         <div>
           <h1 className="text-xl mt-5  text-white font-sans font-bold ">
             A{" "}
-            <ReactTyped
+           <ReactTyped
               strings={[
                 "Web Developer",
                 "BackEnd Developer",

@@ -46,8 +46,7 @@ function Contact() {
             className="text-white flex w-
             30 p-2 ml-[70%] animate-bounce rounded-lg "
           >
-            Submit
-          </button>
+          Submit</button>
         </form>
       </div>
     </div>
