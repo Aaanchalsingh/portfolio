@@ -30,14 +30,14 @@ function Certification() {
   }, []);
   return (
     <>
-      <div className="pb-5 shadow-lg shadow-black text-center flex flex-col">
+      <div className="shadow-lg shadow-black text-center flex flex-col skills text-white pb-[5%]" id="box5">
         <div className={`${fadeIn ? 'zoom-in-left' :'zoom-in-left'} animate-on-scroll`}>
-        <h1 className="text-7xl  text-purple-990 font-sans-serrif font-bold  text-center pt-4 mb-[5%] mt-[5%]">
+        <h1 className="text-7xl  text-purple-990 font-sans-serrif font-bold  text-center pt-4 mb-[5%]">
           Certification
         </h1>
         </div>
         <div className="flex justify-evenly ml-5 mb-12">
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :'zoom-in-left'} animate-on-scroll`}>
+          <div className={`h-[280px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :'zoom-in-left'} animate-on-scroll`}>
             <img
               src="hackncrack.jpg"
               alt=""
@@ -49,7 +49,7 @@ function Certification() {
               HackaThon
             </span>
           </div>
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoominup' :'zoominup'} animate-on-scroll`}>
+          <div className={`h-[280px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoominup' :'zoominup'} animate-on-scroll`}>
             <img
               src="coders.png"
               alt=""
@@ -57,11 +57,11 @@ function Certification() {
               width={250}
               className="m-5 ml-12 mb-2 rounded-xl shadow-lg shadow-black"
             />
-            <span className="text-white font-bold text-center text-4xl ">
+            <span className="text-white font-bold text-center text-4xl mt-[15%]">
               Coders Combat
             </span>
           </div>
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :'zoom-in-right'} animate-on-scroll`}>
+          <div className={`h-[280px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :'zoom-in-right'} animate-on-scroll`}>
             <img
               src="mern.png"
               alt=""
@@ -75,7 +75,7 @@ function Certification() {
           </div>
         </div>
         <div className="flex ml-5 justify-evenly">
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :'zoom-in-left'} animate-on-scroll`}>
+          <div className={`h-[280px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :'zoom-in-left'} animate-on-scroll`}>
             <img
               src="webd.png"
               alt=""
@@ -87,7 +87,7 @@ function Certification() {
               Full Stack
             </span>
           </div>
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoominup' :'zoominup'} animate-on-scroll`}>
+          <div className={`h-[280px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoominup' :'zoominup'} animate-on-scroll`}>
             <img
               src="ibm.png"
               alt=""
@@ -99,7 +99,7 @@ function Certification() {
               Operating System
             </span>
           </div>
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :'zoom-in-right'} animate-on-scroll`}>
+          <div className={`h-[280px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :'zoom-in-right'} animate-on-scroll`}>
             <img
               src="upgrad.png"
               alt=""

@@ -20,7 +20,7 @@ function Skills() {
 
   return (
     <>
-      <div className=" pb-5 bg-purple-500 shadow-lg shadow-black">
+      <div className="pb-5 bg-purple-500 shadow-lg shadow-black" id="box2">
         <div className={`${fadeIn ? 'zoominup' : 'fade-up'}`}>
       <h1 className="text-7xl  text-purple-990 font-sans-serrif font-bold  text-center pt-4 mb-12 ">Tech Stack</h1>
       </div>

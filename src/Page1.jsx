@@ -6,11 +6,11 @@ function Page1() {
     <div>
       <div
         className="c1 h-[150px] w-[150px] bg-red-600 rounded-full"
-        style={{ position: "absolute", top: "79%", left: "5%", zIndex: "-1" }}
+        style={{ position: "absolute", top: "79%", left: "6%", zIndex: "-1" }}
       ></div>
       <div
         className="h-[150px] w-[150px] bg-red-600 rounded-full"
-        style={{ position: "absolute", top: "6%", left: "84%", zIndex: "-1" }}
+        style={{ position: "absolute", top: "8%", left: "83%", zIndex: "-1" }}
       ></div>
       <div
         className="shadow-lg mb-[7%]  shadow-black border-lg  h-[600px] m-5 rounded-lg flex justify-between  ml-[10%] mr-[10%] mt-[3%] border-violet-900"
@@ -47,7 +47,7 @@ function Page1() {
             </button>
           </div>
         </div>
-        <img src="act.png" className="w-[50%] h-[50%]" alt="" />
+        <img src="act.png" className="w-[60%] h-[80%] mt-[5%]" alt="" />
       </div>
     </div>
   );
