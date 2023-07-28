@@ -17,7 +17,7 @@ function Page1() {
         style={{ backgroundColor: "rgb(20, 2, 44)" }}
       >
         <div className="">
-          <h1 className=" mt-[10%] ml-[15%] w-[90%] md:w-[30%] overflow-hidden md:text-2xl text-xl text-white flex mb-5 font-sans">Hello, I am</h1>
+          <h1 className=" mt-[10%] ml-[15%] w-[90%] md:w-[50%] overflow-hidden md:text-2xl text-xl text-white flex mb-5 font-sans">Hello, I am</h1>
           <h1 className=" mt-[10%] ml-[15%] w-[90%] md:w-[30%] md:text-7xl text-5xl text-white font-sans font-bold overflow-hidden">Aanchal</h1>
           <h1 className=" mt-[10%] ml-[15%] w-[90%] md:w-[30%]  md:text-7xl text-5xl text-white font-sans font-bold">Singh</h1>
           <div className="ml-[0%]">
