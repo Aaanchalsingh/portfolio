@@ -31,7 +31,7 @@ function Project() {
 
   return (
     <>
-      <div className="bg-blue-500 skills text-white box3 pb-5 shadow-lg shadow-black" id="box3">
+      <div className="bg-blue-500 skills text-white pb-5 shadow-lg shadow-black" id="Project">
         <div className={`${fadeIn ? 'zoom-in-left' :'zoom-in-left'} animate-on-scroll`}>
         <h1 className="text-7xl  text-purple-990 font-sans-serrif font-bold  text-center pt-4 mb-12 ">
           Projects

@@ -3,7 +3,7 @@ import {FaHeadset} from 'react-icons/fa';
 
 function Contact() {
   return (
-    <div className="bg-blue-200 flex flex-col items-center justify-center mb-12 pb-12 shadow-lg rounded-lg shadow-black" id="box4">
+    <div className="bg-blue-200 flex flex-col items-center justify-center mb-12 pb-12 shadow-lg rounded-lg shadow-black" id="Contact">
       <h1 className="text-5xl font-bold mt-5 mb-12 flex animate-bounce" >
         <FaHeadset className="favicon"/> &nbsp; Get in <span className="italic text-purple-900
       "> Touch</span></h1>

@@ -5,17 +5,15 @@ function Header() {
   const [anchor, setAnchor] = useState(null);
 
   useEffect(() => {
-    const home = document.getElementById("box1");
-    const skills = document.getElementById("box2");
-    const projects = document.getElementById("box3");
-    const contact = document.getElementById("box4");
-    const certifications = document.getElementById("box5");
+    const Skills = document.getElementById("Skills");
+    const Project = document.getElementById("Project");
+    const Contact = document.getElementById("Contact");
+    const Certification = document.getElementById("Certification");
     setAnchor({
-      home,
-      skills,
-      projects,
-      contact,
-      certifications,
+      Skills,
+      Project,
+      Contact,
+      Certification,
     });
   }, []);
 
@@ -41,7 +39,6 @@ function Header() {
             className="nav-link active ml-auto"
             aria-current="page"
             to="/"
-            onClick={(event) => handleclick(event, "home")}
           >
             Home
           </Link>
@@ -53,7 +50,7 @@ function Header() {
             to="/Certification"
             onClick={(event) => handleclick(event, "Certification")}
           >
-            About
+            Certifications
           </Link>
         </li>
         <li className="mr-5 md:mr-16 pt-6 md:text-2xl hover:text-yellow-500 ">
