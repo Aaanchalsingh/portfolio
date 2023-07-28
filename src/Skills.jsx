@@ -1,7 +1,131 @@
-import "./skills.css";
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
+import "./media.css";
+
+const skillsData = [
+  {
+    name: "ReactJS",
+    icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png",
+  },
+  {
+    name: "ExpressJS",
+    icon: "https://img.icons8.com/fluency/48/000000/node-js.png",
+  },
+  {
+    name: "NodeJS",
+    icon: "https://img.icons8.com/color/48/000000/nodejs.png",
+  },
+  {
+    name: "Redux",
+    icon: "https://img.icons8.com/color/48/000000/redux.png",
+  },
+  {
+    name: "Firebase",
+    icon: "https://img.icons8.com/color/48/000000/firebase.png",
+  },
+  {
+    name: "Android",
+    icon: "https://img.icons8.com/fluency/48/000000/android-os.png",
+  },
+  {
+    name: "MaterialUI",
+    icon: "https://img.icons8.com/color/48/000000/material-ui.png",
+  },
+  {
+    name: "ChakraUI",
+    icon: "https://img.icons8.com/color/48/000000/chakra-ui.png",
+  },
+  {
+    name: "TailwindCSS",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png",
+  },
+  {
+    name: "Bootstrap",
+    icon: "https://img.icons8.com/color/48/000000/bootstrap.png",
+  },
+  {
+    name: "Sass",
+    icon: "https://img.icons8.com/color/48/000000/sass.png",
+  },
+  {
+    name: "HTML5",
+    icon: "https://img.icons8.com/color/48/000000/html-5--v1.png",
+  },
+  {
+    name: "CSS3",
+    icon: "https://img.icons8.com/color/48/000000/css3.png",
+  },
+  {
+    name: "JavaScript",
+    icon: "https://img.icons8.com/color/48/000000/javascript--v1.png",
+  },
+  {
+    name: "Java",
+    icon: "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png",
+  },
+  {
+    name: "Kotlin",
+    icon: "https://img.icons8.com/color/48/000000/kotlin.png",
+  },
+  {
+    name: "PHP",
+    icon: "https://img.icons8.com/offices/48/000000/php-logo.png",
+  },
+  {
+    name: "Python",
+    icon: "https://img.icons8.com/color/48/000000/python--v1.png",
+  },
+  {
+    name: "C++",
+    icon: "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png",
+  },
+  {
+    name: "MongoDB",
+    icon: "https://img.icons8.com/color/48/000000/mongodb.png",
+  },
+  {
+    name: "MySQL",
+    icon: "https://img.icons8.com/color/48/000000/mysql-logo.png",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "https://img.icons8.com/color/48/000000/postgreesql.png",
+  },
+  {
+    name: "AWS",
+    icon: "https://img.icons8.com/color/48/000000/amazon-web-services.png",
+  },
+  {
+    name: "Heroku",
+    icon: "https://img.icons8.com/color/48/000000/heroku.png",
+  },
+  {
+    name: "Netlify",
+    icon: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png",
+  },
+  {
+    name: "DigitalOcean",
+    icon: "https://img.icons8.com/ios-filled/48/0080FF/digitalocean.png",
+  },
+  {
+    name: "jQuery",
+    icon: "https://img.icons8.com/ios-filled/48/1169ae/jquery.png",
+  },
+  {
+    name: "Git VCS",
+    icon: "https://img.icons8.com/color/48/000000/git.png",
+  },
+  {
+    name: "GitHub",
+    icon: "https://img.icons8.com/glyph-neue/48/ffffff/github.png",
+  },
+  {
+    name: "WordPress",
+    icon: "https://img.icons8.com/color/48/000000/wordpress.png",
+  },
+];
 
 function Skills() {
+  const [skills, setSkills] = useState([]);
 
   const [fadeIn, setFadeIn] = useState(false);
 
@@ -15,174 +139,33 @@ function Skills() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    setSkills(skillsData);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <>
-      <div className="pb-5 bg-purple-500 shadow-lg shadow-black" id="Skills">
-        <div className={`${fadeIn ? 'zoominup' : 'fade-up'}`}>
-      <h1 className="text-7xl  text-purple-990 font-sans-serrif font-bold  text-center pt-4 mb-12 ">Tech Stack</h1>
-      </div>
-      <div className="text-center flex bg-purple-900 rounded-lg shadow-lg shadow-black justify-evenly p-[5%] pt-[5%] ml-[20%] mr-[20%] mb-12 flex-wrap gap-[20px]">
-      <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoominup' : ''}`}>
-          <img
-            src="https://cdn.worldvectorlogo.com/logos/html-1.svg"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4 "
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-center text-xl ">HTML 5</span>
+      <div className="skills" id="Skills">
+        <div className={`${fadeIn ? "zoominup" : "fade-up"}`}>
+          <h2 className="heading text-center text-7xl font-bold  pt-[5%]">Tech Stack</h2>
         </div>
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black  cursor-pointer ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/768px-CSS3_logo.svg.png?20210705212817"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4 "
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">CSS 3</span>
+        <div className="container flex flex-wrap">
+          <div  className={`row ${fadeIn ? "zoominup" : ""}`}>
+          {skills.map((skill, index) => (
+              <div key={index} className="bar">
+                <div className="info">
+                  <img
+                    src={skill.icon}
+                    alt=""
+                  />
+                  <span >
+                    {skill.name}
+                  </span>
+                </div>
+              </div>
+          ))}
+          </div>
         </div>
-
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer   ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4"
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">JavaScript</span>
-        </div>
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer   ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/768px-Tailwind_CSS_Logo.svg.png?20230715030042"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4"
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">Tailwind CSS</span>
-        </div>
-
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer   ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png?20220125121207"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4"
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">React JS</span>
-        </div>
-
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer   ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4"
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">Next JS</span>
-        </div>
-
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer   ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Sql_database_shortcut_icon.png?20110724224419"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4"
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">SQL</span>
-        </div>
-
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer   ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Mongodb-svgrepo-com.svg/900px-Mongodb-svgrepo-com.svg.png?20230427111850"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4"
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">Mongodb</span>
-        </div>
-
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer   ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://img.icons8.com/fluency/48/000000/node-js.png"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4"
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">Node JS</span>
-        </div>
-
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer   ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://img.icons8.com/color/48/000000/kotlin.png"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4"
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">Kotlin</span>
-        </div>
-
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer   ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://img.icons8.com/glyph-neue/48/ffffff/github.png"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4"
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">GitHub</span>
-        </div>
-
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer   ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/768px-Bootstrap_logo.svg.png?20210507000024"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4"
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">Bootstrap</span>
-        </div>
-
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer   ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4"
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">Java</span>
-        </div>
-
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer   ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://img.icons8.com/color/48/000000/python--v1.png"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4"
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">Python</span>
-        </div>
-
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer   ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4"
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">jquery</span>
-        </div>
-
-        <div className={`h-40 w-40 bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer   ${fadeIn ? 'zoominup' : 'fade-up'}`}>
-          <img
-            src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
-            className="h-[90px] w-[115px] ml-6 mb-2 mt-4"
-            alt=""
-            srcset=""
-          />
-          <span className="text-white font-bold text-xl">C++</span>
-        </div>
-      </div>
       </div>
     </>
   );

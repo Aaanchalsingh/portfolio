@@ -38,25 +38,25 @@ function Project() {
         </h1>
         </div>
         <div className="text-center flex bg-blue-950 rounded-lg shadow-lg shadow-black justify-evenly p-[5%] pt-[5%] ml-[20%] mr-[20%] mb-12 flex-wrap gap-[20px]">
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :''} animate-on-scroll`}>
+          <div className={`h-auto w-auto bg-slate-900 mb-12 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :''} animate-on-scroll`}>
             <img
               src="resume.png"
               alt=""
               height={250}
               width={250}
-              className="m-5 ml-12 mb-2 rounded-xl shadow-lg shadow-black"
+              className="md:m-5 md:ml-12 mb-5 rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
               Resume Builder
             </span>
           </div>
-          <div className={`h-[350px] w-[370px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :''} animate-on-scroll`}>
+          <div className={`h-auto w-auto bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :''} animate-on-scroll`}>
             <img
               src="Portfolio.png"
               alt=""
               height={340}
               width={340}
-              className="m-12 ml-4 mb-10 rounded-xl shadow-lg shadow-black"
+              className="md:m-12 md:ml-4 md:mb-10 mb-5 rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold  text-center text-4xl ">
               Portfolio
@@ -64,26 +64,26 @@ function Project() {
           </div>
         </div>
         <div className="text-center flex bg-blue-950 rounded-lg shadow-lg shadow-black justify-evenly p-[5%] pt-[5%] ml-[20%] mr-[20%] mb-12 flex-wrap gap-[20px]">
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer pb-5 ${fadeIn ? 'zoom-in-left' :''} animate-on-scroll`}>
+          <div className={`h-auto w-auto bg-slate-900 mb-12 rounded-lg shadow-lg shadow-black cursor-pointer pb-5 ${fadeIn ? 'zoom-in-left' :''} animate-on-scroll`}>
             <img
               src="id.png"
               alt=""
               height={300}
               width={300}
-              className="m-12 ml-6 mb-5 rounded-xl shadow-lg shadow-black"
+              className="md:m-12 md:ml-6  mb-5 rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white mt-6 font-bold  text-center text-4xl ">
               ID Card Maker
             </span>
           </div>
 
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :''} animate-on-scroll`}>
+          <div className={`h-auto w-auto bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :''} animate-on-scroll`}>
             <img
               src="dog.png"
               alt=""
               height={300}
               width={300}
-              className="m-12 ml-6 mb-6 rounded-xl shadow-lg shadow-black"
+              className="md:m-12 md:ml-6 mb-6 rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
               TinDog
@@ -91,26 +91,26 @@ function Project() {
           </div>
         </div>
         <div className="text-center flex bg-blue-950 rounded-lg shadow-lg shadow-black justify-evenly p-[5%] pt-[5%] ml-[20%] mr-[20%] mb-12 flex-wrap gap-[20px]">
-          <div className={`h-[300px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :''} animate-on-scroll`}>
+          <div className={`h-auto w-auto bg-slate-900 rounded-lg mb-12 shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :''} animate-on-scroll`}>
             <img
               src="quote.png"
               alt=""
               height={270}
               width={270}
-              className="m-10 mt-6 mb-2 rounded-xl shadow-lg shadow-black"
+              className="md:m-10 md:mt-6 md:mb-2 mb-5 rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
               Quote Engine
             </span>
           </div>
 
-          <div className={`h-[300px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer  ${fadeIn ? 'zoom-in-right' :''} animate-on-scroll`}>
+          <div className={`h-auto w-auto bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer  ${fadeIn ? 'zoom-in-right' :''} animate-on-scroll`}>
             <img
               src="developerolio.png"
               alt=""
               height={300}
               width={300}
-              className="m-12 ml-6 mb-2 rounded-xl shadow-lg shadow-black"
+              className="md:m-12 md:ml-6 md:mb-2 mb-5 rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
               Developer Folio
@@ -118,27 +118,27 @@ function Project() {
           </div>
         </div>
         <div className="text-center flex bg-blue-950 rounded-lg shadow-lg shadow-black justify-evenly p-[5%] pt-[5%] ml-[20%] mr-[20%] mb-12 flex-wrap gap-[20px]">
-          <div className={`h-[300px] w-[350px] bg-slate-900 rounded-lg shadow-lg  shadow-black  cursor-pointer ${fadeIn ? 'zoom-in-left' :''} animate-on-scroll`}>
+          <div className={`h-auto w-auto bg-slate-900 mb-12 rounded-lg shadow-lg  shadow-black  cursor-pointer ${fadeIn ? 'zoom-in-left' :''} animate-on-scroll`}>
             <img
               src="secret.png"
               alt=""
               height={350}
               width={300}
-              className="m-6 mb-2  rounded-xl shadow-lg shadow-black"
+              className="md:m-6 md:mb-2  rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
               Secret
             </span>
           </div>
-          <div className={`h-[300px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :''} animate-on-scroll`}>
+          <div className={`h-auto w-auto bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :''} animate-on-scroll`}>
             <img
               src="drum.png"
               alt=""
               height={300}
               width={300}
-              className="m-12 ml-6 mb-2 rounded-xl  shadow-lg shadow-black"
+              className="md:m-12 md:ml-6  mb-5 rounded-xl  shadow-lg shadow-black"
             />
-            <span className="text-white font-bold text-center text-4xl ">
+            <span className="text-white font-bold mt-12 text-center text-4xl ">
               Drum Game
             </span>
           </div>

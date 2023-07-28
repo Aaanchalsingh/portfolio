@@ -36,76 +36,76 @@ function Certification() {
           Certification
         </h1>
         </div>
-        <div className="flex justify-evenly ml-5 mb-12">
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :'zoom-in-left'} animate-on-scroll`}>
+        <div className="flex flex-wrap justify-evenly md:ml-5 mb-12">
+          <div className={`h-auto w-auto bg-slate-900 mb-12 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :'zoom-in-left'} animate-on-scroll`}>
             <img
               src="hackncrack.jpg"
               alt=""
               height={250}
               width={250}
-              className="m-5 ml-12 mb-2 rounded-xl shadow-lg shadow-black"
+              className="md:m-5 md:ml-12 md:mb-2 mb-5 rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
               HackaThon
             </span>
           </div>
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoominup' :'zoominup'} animate-on-scroll`}>
+          <div className={`h-auto w-auto bg-slate-900 rounded-lg shadow-lg shadow-black mb-12 cursor-pointer ${fadeIn ? 'zoominup' :'zoominup'} animate-on-scroll`}>
             <img
               src="coders.png"
               alt=""
               height={250}
               width={250}
-              className="m-5 ml-12 mb-2 rounded-xl shadow-lg shadow-black"
+              className="md:m-5 md:ml-12 md:mb-2 mb-5  rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
               Coders Combat
             </span>
           </div>
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :'zoom-in-right'} animate-on-scroll`}>
+          <div className={`h-auto w-auto bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :'zoom-in-right'} animate-on-scroll`}>
             <img
               src="mern.png"
               alt=""
               height={250}
               width={250}
-              className="m-5 ml-12 mb-2 rounded-xl shadow-lg shadow-black"
+              className="md:m-5 md:ml-12 md:mb-2 mb-5  rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
               Mern Stack
             </span>
           </div>
         </div>
-        <div className="flex ml-5 justify-evenly">
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :'zoom-in-left'} animate-on-scroll`}>
+        <div className="flex flex-wrap ml-5 justify-evenly">
+          <div className={`h-auto w-auto bg-slate-900 mb-12 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :'zoom-in-left'} animate-on-scroll`}>
             <img
               src="webd.png"
               alt=""
               height={250}
               width={250}
-              className="m-5 ml-12 mb-2 rounded-xl shadow-lg shadow-black"
+              className="md:m-5 md:ml-12 md:mb-2 mb-5  rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
               Full Stack
             </span>
           </div>
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoominup' :'zoominup'} animate-on-scroll`}>
+          <div className={`h-auto w-auto bg-slate-900 rounded-lg shadow-lg shadow-black mb-12 cursor-pointer ${fadeIn ? 'zoominup' :'zoominup'} animate-on-scroll`}>
             <img
               src="ibm.png"
               alt=""
               height={250}
               width={250}
-              className="m-5 ml-12 mb-2 rounded-xl shadow-lg shadow-black"
+              className="md:m-5 md:ml-12 md:mb-2 mb-5  rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
-              Operating System
+              OS
             </span>
           </div>
-          <div className={`h-[350px] w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :'zoom-in-right'} animate-on-scroll`}>
+          <div className={`h-auto w-auto bg-slate-900 mb-12 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :'zoom-in-right'} animate-on-scroll`}>
             <img
               src="upgrad.png"
               alt=""
               height={250}
               width={250}
-              className="m-5 ml-12 mb-2 rounded-xl shadow-lg shadow-black"
+              className="md:m-5 md:ml-12 md:mb-2 mb-5  rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
               Cyber Security

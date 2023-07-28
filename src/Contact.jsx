@@ -13,7 +13,7 @@ function Contact() {
           alt=""
           height={250}
           width={400}
-          className="mr-12 hover:animate-spin"
+          className="hidden md:flex mr-12"
         />
         <form action="/" method="POST" className="flex flex-col">
           <input
@@ -44,9 +44,9 @@ function Contact() {
             type="submit"
             style={{ backgroundColor: "#2506ad" ,boxShadow:"0px 5px 10px rgba(48, 68, 247, 0.6)",transition:"0.3s ease"}}
             className="text-white flex w-
-            30 p-2 ml-[70%] animate-bounce rounded-lg "
+            25 p-2 ml-[70%] text-center animate-bounce rounded-lg pr-0 mr-0"
           >
-          Submit</button>
+          &nbsp;Submit</button>
         </form>
       </div>
     </div>

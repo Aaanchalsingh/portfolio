@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./head.css"
 
 function Header() {
   const [anchor, setAnchor] = useState(null);
@@ -27,19 +28,16 @@ function Header() {
   };
 
   return (
-    <div className="flex justify-between">
+    <header className="flex justify-between">
+       <div id="menu" class="fas fa-bars font-bold text-5xl m-5 mt-12 cursor-pointer text-slate-700"> &#8801;</div>
       <h1 className="font-bold text-2xl md:text-3xl ml-5 text-slate-900">
         <div className="flex pl-12 pt-6">
           <h1 style={{ fontFamily: "Bungee Spice" }}>Aanchal</h1>
         </div>
       </h1>
-      <ul className="flex font-bold justify-evenly text-1xl">
+      <ul className="hidden md:flex font-bold justify-evenly text-1xl ">
         <li className="mr-5 md:mr-16 md:text-2xl pb-5 hover:text-yellow-500 bg-red-600 text-white p-5">
-          <Link
-            className="nav-link active ml-auto"
-            aria-current="page"
-            to="/"
-          >
+          <Link className="nav-link active ml-auto" aria-current="page" to="/">
             Home
           </Link>
         </li>
@@ -84,7 +82,7 @@ function Header() {
           </Link>
         </li>
       </ul>
-    </div>
+    </header>
   );
 }
 
