@@ -37,12 +37,15 @@ html {
 }
 .skills h2 {
   color: #fff;
+  margin-bottom: 5%;
 }
 .skills .heading span {
   color: rgb(255, 230, 0);
 }
 .skills .container {
   background: rgba(0, 0, 22, 0.4);
+  display: grid;
+  place-items: center;
   color: #fff;
   border-radius: 1rem;
   padding: 2rem;
@@ -52,7 +55,7 @@ html {
 }
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   flex-wrap: wrap;
   gap: 1.8rem;
 }
@@ -88,15 +91,29 @@ html {
   .skills .container {
     padding: 0;
     margin: 0;
+    font-size: 1rem;
+    height: auto;
+    width: auto;
   }
   .skills .container .row {
     grid-template-columns: repeat(2, 1fr);
-    margin: 1rem;
-    padding: 2rem 0.2rem 2rem 0.2rem;
-    gap: 1rem;
+    margin: 0%;
+    padding: 0%;
+    gap: 0rem;
   }
   .skills .container {
     margin-top: 5px;
     width: 100%;
   }
+  .bar {
+    width: 90%;
+    margin: 5%;
+
+  }
+}
+.ic {
+  color: rgb(44, 3, 99);
+}
+.hi{
+  color: aqua;
 }

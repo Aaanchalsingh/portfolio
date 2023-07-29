@@ -64,7 +64,7 @@ function Footer() {
             </p>
             <div className="share flex mt-4">
               <a
-                href="https://www.linkedin.com/in/Aanchal-sable"
+                href="https://www.linkedin.com/in/Aanchalsingh2003/"
                 className="w-12 h-12 rounded-full text-3xl text-white bg-gray-300 flex items-center justify-center mr-4"
                 aria-label="LinkedIn"
                 target="_blank"
@@ -73,7 +73,7 @@ function Footer() {
                 <FontAwesomeIcon icon={faLinkedin} color="black" />
               </a>
               <a
-                href="https://github.com/Aanchal-sable"
+                href="https://github.com/Aaanchalsingh"
                 className="w-12 h-12 rounded-full text-3xl text-white bg-gray-300 flex items-center justify-center mr-4"
                 aria-label="GitHub"
                 target="_blank"
@@ -91,7 +91,7 @@ function Footer() {
                 <FontAwesomeIcon icon={faEnvelope}  color="black" />
               </a>
               <a
-                href="https://twitter.com/Aanchal_sable"
+                href="https://twitter.com/Aanchal98654594"
                 className="w-12 h-12 rounded-full text-3xl text-white bg-gray-300 flex items-center justify-center mr-4"
                 aria-label="Twitter"
                 target="_blank"
@@ -100,7 +100,7 @@ function Footer() {
                 <FontAwesomeIcon icon={faTwitter}  color="black"/>
               </a>
               <a
-                href="https://t.me/lifecode5"
+                href="https://t.me/aanchal_Singhh"
                 className="w-12 h-12 rounded-full text-3xl text-white bg-gray-300 flex items-center justify-center"
                 aria-label="Telegram"
                 target="_blank"

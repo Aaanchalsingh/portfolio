@@ -62,9 +62,27 @@
   }
 
   .zoom-in-right {
-    /* CSS rules for the zoom-in-right animation */
     animation: zoom-in-right 1s ease;
   }
+  @keyframes animate-on-scroll {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ .animate-on-scroll {
+    /* Apply the animate-on-scroll animation to elements */
+    animation: animate-on-scroll infinite ease forwards;
+
+    /* Set initial opacity and transform to prepare for the animation */
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
 
   @keyframes zoom-in-right {
     from {
@@ -79,4 +97,8 @@
 
   .skills {
     background: linear-gradient(to bottom, #57059e, #4a00e0);
+  }
+  .cen{
+    display: grid;
+    place-items: center;
   }

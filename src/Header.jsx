@@ -28,10 +28,10 @@ function Header() {
   };
 
   return (
-    <header className="flex justify-between">
-       <div id="menu" class="fas fa-bars font-bold text-5xl m-5 mt-12 cursor-pointer text-slate-700"> &#8801;</div>
+    <header className="flex justify-between mt-5  md:mt-0">
+       <div id="menu" class="fas fa-bars font-bold text-5xl m-5 mt-2 cursor-pointer text-slate-700"> &#8801;</div>
       <h1 className="font-bold text-2xl md:text-3xl ml-5 text-slate-900">
-        <div className="flex pl-12 pt-6">
+        <div className="flex m-5 mt-2 md:pl-12 md:pt-6">
           <h1 style={{ fontFamily: "Bungee Spice" }}>Aanchal</h1>
         </div>
       </h1>
@@ -41,16 +41,7 @@ function Header() {
             Home
           </Link>
         </li>
-        <li className="mr-5  hover:text-yellow-500 md:mr-16 md:text-2xl pt-6">
-          <Link
-            className="nav-link active ml-auto"
-            aria-current="page"
-            to="/Certification"
-            onClick={(event) => handleclick(event, "Certification")}
-          >
-            Certifications
-          </Link>
-        </li>
+
         <li className="mr-5 md:mr-16 pt-6 md:text-2xl hover:text-yellow-500 ">
           <Link
             className="nav-link active ml-auto"
@@ -69,6 +60,16 @@ function Header() {
             onClick={(event) => handleclick(event, "Project")}
           >
             Projects
+          </Link>
+        </li>
+        <li className="mr-5  hover:text-yellow-500 md:mr-16 md:text-2xl pt-6">
+          <Link
+            className="nav-link active ml-auto"
+            aria-current="page"
+            to="/Certification"
+            onClick={(event) => handleclick(event, "Certification")}
+          >
+            Certifications
           </Link>
         </li>
         <li className="mr-5  hover:text-yellow-500 md:mr-16 pt-6 md:text-2xl  ">

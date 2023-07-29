@@ -15,36 +15,12 @@ const skillsData = [
     icon: "https://img.icons8.com/color/48/000000/nodejs.png",
   },
   {
-    name: "Redux",
-    icon: "https://img.icons8.com/color/48/000000/redux.png",
-  },
-  {
-    name: "Firebase",
-    icon: "https://img.icons8.com/color/48/000000/firebase.png",
-  },
-  {
-    name: "Android",
-    icon: "https://img.icons8.com/fluency/48/000000/android-os.png",
-  },
-  {
-    name: "MaterialUI",
-    icon: "https://img.icons8.com/color/48/000000/material-ui.png",
-  },
-  {
-    name: "ChakraUI",
-    icon: "https://img.icons8.com/color/48/000000/chakra-ui.png",
-  },
-  {
     name: "TailwindCSS",
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png",
   },
   {
     name: "Bootstrap",
     icon: "https://img.icons8.com/color/48/000000/bootstrap.png",
-  },
-  {
-    name: "Sass",
-    icon: "https://img.icons8.com/color/48/000000/sass.png",
   },
   {
     name: "HTML5",
@@ -67,10 +43,6 @@ const skillsData = [
     icon: "https://img.icons8.com/color/48/000000/kotlin.png",
   },
   {
-    name: "PHP",
-    icon: "https://img.icons8.com/offices/48/000000/php-logo.png",
-  },
-  {
     name: "Python",
     icon: "https://img.icons8.com/color/48/000000/python--v1.png",
   },
@@ -85,14 +57,6 @@ const skillsData = [
   {
     name: "MySQL",
     icon: "https://img.icons8.com/color/48/000000/mysql-logo.png",
-  },
-  {
-    name: "PostgreSQL",
-    icon: "https://img.icons8.com/color/48/000000/postgreesql.png",
-  },
-  {
-    name: "AWS",
-    icon: "https://img.icons8.com/color/48/000000/amazon-web-services.png",
   },
   {
     name: "Heroku",
@@ -111,16 +75,12 @@ const skillsData = [
     icon: "https://img.icons8.com/ios-filled/48/1169ae/jquery.png",
   },
   {
-    name: "Git VCS",
+    name: "Git",
     icon: "https://img.icons8.com/color/48/000000/git.png",
   },
   {
     name: "GitHub",
     icon: "https://img.icons8.com/glyph-neue/48/ffffff/github.png",
-  },
-  {
-    name: "WordPress",
-    icon: "https://img.icons8.com/color/48/000000/wordpress.png",
   },
 ];
 
@@ -147,12 +107,12 @@ function Skills() {
     <>
       <div className="skills" id="Skills">
         <div className={`${fadeIn ? "zoominup" : "fade-up"}`}>
-          <h2 className="heading text-center text-7xl font-bold  pt-[5%]">Tech Stack</h2>
+          <h2 className="heading text-center text-5xl md:text-7xl font-bold  pt-[5%]">Tech Stack</h2>
         </div>
-        <div className="container flex flex-wrap">
+        <div className="container flex flex-wrap ">
           <div  className={`row ${fadeIn ? "zoominup" : ""}`}>
           {skills.map((skill, index) => (
-              <div key={index} className="bar">
+              <div key={index} className="bar overflow-hidden">
                 <div className="info">
                   <img
                     src={skill.icon}
