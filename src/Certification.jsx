@@ -1,31 +1,23 @@
 import "./skills.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 function Certification() {
-  const [fadeIn, setFadeIn] = useState(false);
-
-  const handleScroll = () => {
-    if (window.scrollY > 200) {
-      setFadeIn(true);
-    } else {
-      setFadeIn(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   return (
     <>
-      <div className="pb-5 shadow-lg shadow-black skills text-white text-center flex flex-col" id="Certification">
-        <div className={`${fadeIn ? 'zoom-in-left' :'zoom-in-left'} animate-on-scroll`}>
-        <h1 className="text-5xl md:text-7xl  text-purple-990 font-sans-serrif font-bold  text-center pt-4 mb-[5%] mt-[5%]">
-          Certifications
-        </h1>
+      <div
+        className="pb-5 shadow-lg shadow-black skills text-white text-center flex flex-col"
+        id="Certification"
+      >
+        <div data-aos="zoom-in-up">
+          <h1 className="text-5xl md:text-7xl  text-purple-990 font-sans-serrif font-bold  text-center pt-4 mb-[5%] mt-[2%]">
+            Certifications
+          </h1>
         </div>
         <div className="flex flex-wrap justify-evenly md:ml-5 mb-12">
-          <div className={`h-auto w-auto md:h-[270px] md:w-[300px] bg-slate-900 mb-12 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :'zoom-in-left'} animate-on-scroll cen`}>
+          <div
+            className="h-auto w-auto md:h-[270px] md:w-[300px] bg-slate-900 grid place-items-center mb-12 rounded-lg shadow-lg shadow-black cursor-pointer "
+            data-aos="zoom-in-right"
+          >
             <img
               src="hackncrack.jpg"
               alt=""
@@ -37,7 +29,10 @@ function Certification() {
               HackaThon
             </span>
           </div>
-          <div className={`h-auto w-auto md:h-[270px] md:w-[300px] bg-slate-900 rounded-lg shadow-lg shadow-black mb-12 cursor-pointer ${fadeIn ? 'zoominup' :'zoominup'} animate-on-scroll cen`}>
+          <div
+            className="h-auto w-auto md:h-[270px] md:w-[300px] bg-slate-900 rounded-lg shadow-lg shadow-black mb-12 cursor-pointer grid place-items-center "
+            data-aos="zoom-in-up"
+          >
             <img
               src="coders.png"
               alt=""
@@ -49,7 +44,10 @@ function Certification() {
               Coders Combat
             </span>
           </div>
-          <div className={`h-auto w-auto md:h-[270px] md:w-[300px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :'zoom-in-right'} animate-on-scroll cen`}>
+          <div
+            className="h-auto w-auto md:h-[270px] md:w-[300px] bg-slate-900 rounded-lg grid place-items-center  shadow-lg shadow-black cursor-pointer "
+            data-aos="zoom-in-left"
+          >
             <img
               src="mern.png"
               alt=""
@@ -63,7 +61,10 @@ function Certification() {
           </div>
         </div>
         <div className="flex flex-wrap ml-5 justify-evenly">
-          <div className={`h-auto w-auto md:h-[270px] md:w-[300px] bg-slate-900 mb-12 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-left' :'zoom-in-left'} animate-on-scroll cen`}>
+          <div
+            className="h-auto w-auto md:h-[270px] md:w-[300px] bg-slate-900 mb-12 grid place-items-center  rounded-lg shadow-lg shadow-black cursor-pointer "
+            data-aos="zoom-in-right"
+          >
             <img
               src="webd.png"
               alt=""
@@ -75,7 +76,10 @@ function Certification() {
               Full Stack
             </span>
           </div>
-          <div className={`h-auto w-auto md:h-[270px] md:w-[300px] bg-slate-900 rounded-lg shadow-lg shadow-black mb-12 cursor-pointer ${fadeIn ? 'zoominup' :'zoominup'} animate-on-scroll cen`}>
+          <div
+            className="h-auto w-auto md:h-[270px] md:w-[300px] bg-slate-900 rounded-lg grid place-items-center shadow-lg shadow-black mb-12 cursor-pointer "
+            data-aos="zoom-in-up"
+          >
             <img
               src="ibm.png"
               alt=""
@@ -87,7 +91,10 @@ function Certification() {
               OS
             </span>
           </div>
-          <div className={`h-auto w-auto md:h-[270px] md:w-[300px] bg-slate-900 mb-12 rounded-lg shadow-lg shadow-black cursor-pointer ${fadeIn ? 'zoom-in-right' :'zoom-in-right'} animate-on-scroll cen`}>
+          <div
+            className="h-auto w-auto md:h-[270px] md:w-[300px] bg-slate-900 mb-12 grid place-items-center rounded-lg shadow-lg shadow-black cursor-pointer "
+            data-aos="zoom-in-left"
+          >
             <img
               src="upgrad.png"
               alt=""

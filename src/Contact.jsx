@@ -4,10 +4,10 @@ import {FaHeadset} from 'react-icons/fa';
 function Contact() {
   return (
     <div className="bg-blue-200 flex flex-col items-center justify-center mb-12 pb-12 shadow-lg rounded-lg shadow-black overflow-hidden" id="Contact">
-      <h1 className="text-5xl font-bold mt-12  md:mt-5 mb-12 flex animate-bounce" >
+      <h1 className="text-5xl font-bold mt-12  mb-12 flex animate-bounce"data-aos="zoom-in-up" >
         <FaHeadset className="favicon"/> &nbsp; Get in <span className="italic text-purple-900
       "> Touch</span></h1>
-      <div className="flex shadow-lg rounded-lg overflow-hidden shadow-black w-half p-20 bg-white">
+      <div className="flex shadow-lg rounded-lg overflow-hidden shadow-black w-half p-20 bg-white"data-aos="zoom-in-up">
         <img
           src="contact.png"
           alt=""
@@ -43,9 +43,9 @@ function Contact() {
           <button
             type="submit"
             style={{ backgroundColor: "#2506ad" ,boxShadow:"0px 5px 10px rgba(48, 68, 247, 0.6)",transition:"0.3s ease"}}
-            className="text-white  ml-[70%] text-center animate-bounce rounded-lg pr-0 m-0 p-2"
+            className="text-white  ml-[70%] text-center  rounded-lg pr-0 m-0 p-2"
           >
-          &nbsp;Submit</button>
+          Submit</button>
         </form>
       </div>
     </div>

@@ -86,31 +86,18 @@ const skillsData = [
 
 function Skills() {
   const [skills, setSkills] = useState([]);
-
-  const [fadeIn, setFadeIn] = useState(false);
-
-  const handleScroll = () => {
-    if (window.scrollY > 200) {
-      setFadeIn(true);
-    } else {
-      setFadeIn(false);
-    }
-  };
-
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
     setSkills(skillsData);
-    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <>
       <div className="skills" id="Skills">
-        <div className={`${fadeIn ? "zoominup" : "fade-up"}`}>
+        <div data-aos="zoom-in-up">
           <h2 className="heading text-center text-5xl md:text-7xl font-bold  pt-[5%]">Tech Stack</h2>
         </div>
         <div className="container flex flex-wrap ">
-          <div  className={`row ${fadeIn ? "zoominup" : ""}`}>
+          <div  className="row" data-aos="zoom-in-up">
           {skills.map((skill, index) => (
               <div key={index} className="bar overflow-hidden">
                 <div className="info">
