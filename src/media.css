@@ -117,3 +117,18 @@ html {
 .hi{
   color: aqua;
 }
+@media (max-width: 600px) {
+  .contact {
+    min-height: 70vh;
+  }
+  .contact .container {
+    margin: 3rem 0rem 2rem 0rem;
+  }
+  .contact .container {
+    padding: 12px 5px;
+  }
+  .contact .content form {
+    width: 90%;
+    margin-right: 2rem;
+  }
+}

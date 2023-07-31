@@ -1,8 +1,8 @@
 import "./skills.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Project() {
-
   return (
     <>
       <div
@@ -16,34 +16,46 @@ function Project() {
         </div>
         <div className="w-[80%]  md:w-auto text-center flex bg-blue-950 rounded-lg shadow-lg shadow-black justify-evenly p-[5%] pt-[5%] ml-[10%] md:ml-[20%]  mr-[20%] mb-12 flex-wrap gap-[20px]">
           <div
-            className="h-auto w-auto md:h-[350px] md:w-[350px] bg-slate-900 mb-12 rounded-lg shadow-lg shadow-black cursor-pointer"
+            className="h-auto w-auto md:h-[400px] md:w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer pb-6 mb-[20%] grid place-items-center"
+            data-aos="zoom-in-left"
+          >
+            <a
+              href="https://aaanchalsingh.github.io/swiggy/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="s4.png"
+                alt=""
+                height={400}
+                width={400}
+                className=" mb-5 rounded-xl shadow-lg shadow-black"
+              />
+              <span className="text-white font-bold text-center text-4xl ">
+                Swiggy Clone
+              </span>
+            </a>
+          </div>
+          <div
+            className="h-auto w-auto md:h-[400px] md:w-[350px] bg-slate-900 mb-12 rounded-lg shadow-lg shadow-black cursor-pointer grid place-items-center"
             data-aos="zoom-in-right"
           >
+             <a
+              href="https://Aaanchalsingh.github.io/resume"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             <img
               src="resume.png"
               alt=""
-              height={250}
-              width={250}
-              className="md:m-5 md:ml-12 mb-5 rounded-xl shadow-lg shadow-black"
+              height={350}
+              width={300}
+              className="md:m-5 md:ml-5 mb-5 rounded-xl shadow-lg shadow-black"
             />
             <span className="text-white font-bold text-center text-4xl ">
               Resume Builder
             </span>
-          </div>
-          <div
-            className="h-auto w-auto md:h-[350px] md:w-[350px] bg-slate-900 rounded-lg shadow-lg shadow-black cursor-pointer"
-            data-aos="zoom-in-left"
-          >
-            <img
-              src="Portfolio.png"
-              alt=""
-              height={340}
-              width={340}
-              className="md:m-12 md:ml-4 md:mb-10 mb-5 rounded-xl shadow-lg shadow-black"
-            />
-            <span className="text-white font-bold  text-center text-4xl ">
-              Portfolio
-            </span>
+            </a>
           </div>
         </div>
         <div className="text-center w-[80%] md:w-auto flex bg-blue-950 rounded-lg shadow-lg shadow-black justify-evenly p-[5%] pt-[5%] ml-[10%] md:ml-[20%] mr-[20%] mb-12 flex-wrap gap-[20px]">

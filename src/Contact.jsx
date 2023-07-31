@@ -1,13 +1,14 @@
 import React from "react";
 import {FaHeadset} from 'react-icons/fa';
+import "./media.css"
 
 function Contact() {
   return (
-    <div className="bg-blue-200 flex flex-col items-center justify-center mb-12 pb-12 shadow-lg rounded-lg shadow-black overflow-hidden" id="Contact">
-      <h1 className="text-5xl font-bold mt-12  mb-12 flex animate-bounce"data-aos="zoom-in-up" >
+    <div className="bg-blue-200 flex flex-col items-center justify-center mb-12 pb-12 shadow-lg rounded-lg shadow-black overflow-hidden contact" id="Contact">
+      <h1 className="text-5xl font-bold mt-12  mb-12 flex animate-bounce heading "data-aos="zoom-in-up" >
         <FaHeadset className="favicon"/> &nbsp; Get in <span className="italic text-purple-900
       "> Touch</span></h1>
-      <div className="flex shadow-lg rounded-lg overflow-hidden shadow-black w-half p-20 bg-white"data-aos="zoom-in-up">
+      <div className="flex shadow-lg rounded-lg overflow-hidden shadow-black w-half  md:w-[50%] p-20 bg-white container"data-aos="zoom-in-up">
         <img
           src="contact.png"
           alt=""
@@ -15,7 +16,7 @@ function Contact() {
           width={400}
           className="hidden md:flex mr-12"
         />
-        <form action="/" method="POST" className="flex flex-col m-5 pl-5 w-[85%]">
+        <form action="/" method="POST" className="flex flex-col m-5 pl-5 w-[85%] md:w-[100%]">
           <input
             type="text"
             placeholder="Name"
