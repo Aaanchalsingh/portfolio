@@ -32,8 +32,6 @@ function Header() {
   const handleNavToggle = () => {
     setIsNavOpen(!isNavOpen);
   };
-
-  // Add an event listener to handle clicks outside the navigation menu
   useEffect(() => {
     const closeMenuOnOutsideClick = (event) => {
       const menuElement = document.getElementById("menu");
