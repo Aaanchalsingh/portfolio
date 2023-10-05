@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 import { FaHeadset } from "react-icons/fa";
 import "./media.css";
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
-import {
-  getDatabase,
-  ref,
-  push
-} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
-
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, push } from "firebase/database";
 const appSetting = {
   databaseURL:
-    "https://tech-8082a-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    "https://portfolio-55003-default-rtdb.asia-southeast1.firebasedatabase.app/",
 };
 
 const app = initializeApp(appSetting);
@@ -39,8 +34,6 @@ function Contact() {
     push(data1, data)
       .then(() => {
         console.log("Data sent to Firebase Database:", data);
-
-        // Clear the form inputs after successful submission
         setdata({
           name: "",
           phone: "",
@@ -48,7 +41,8 @@ function Contact() {
           message: "",
         });
 
-        alert("Data sent to Firebase Database successfully!");
+        alert("Data Sent");
+
       })
       .catch((error) => {
         console.error("Error sending data to Firebase Database:", error);
